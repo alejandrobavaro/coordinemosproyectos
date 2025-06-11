@@ -1,0 +1,342 @@
+/* Estilos Mobile First para Contador de Días Rediseñado */
+.contador-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  border-radius: 16px;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #121212 0%, #000000 100%);
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Fondo animado */
+.contador-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(97, 218, 251, 0.1) 0%, transparent 70%);
+  z-index: -2;
+  opacity: 0.6;
+}
+
+/* Marco */
+.contador-frame {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  border: 2px solid rgba(255, 217, 0, 0.438);
+  border-radius: 12px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Partículas flotantes */
+.contador-particle {
+  position: absolute;
+  background: #61dafb;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  animation: flotar-particula linear infinite;
+  filter: blur(1px);
+  mix-blend-mode: screen;
+}
+
+@keyframes flotar-particula {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.8);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-80vh) translateX(20px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* Contenido principal */
+.contador-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
+/* Título */
+.contador-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 1.5rem 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.contador-title-highlight {
+  color: #fbff00b0;
+  font-weight: 800;
+}
+
+/* Contador principal */
+.contador-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contador-bloque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 70px;
+}
+
+.contador-valor {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.2rem;
+  position: relative;
+  background: rgba(30, 30, 30, 0.7);
+  border-radius: 8px;
+  padding: 0.5rem;
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.1),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(241, 251, 97, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.contador-etiqueta {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #bdbdbd;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0.2rem;
+}
+
+.contador-separador {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: -0.8rem;
+}
+
+/* Información adicional */
+.contador-info-adicional {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.contador-tiempo-adicional {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contador-valor-adicional {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fbe461;
+}
+
+.contador-etiqueta-adicional {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: #bdbdbd;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.contador-separador-adicional {
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: 300;
+}
+
+/* Fecha y hora */
+.contador-fecha-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.contador-fecha {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.contador-icono-fecha {
+  color: #f8fb61;
+  font-size: 1rem;
+}
+
+/* Botón de WhatsApp */
+.contador-boton-whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #ac881556;
+  color: white;
+  // box-shadow: 0 4px 15px rgba(255, 255, 255, 0.384);
+  margin-top: 1.5rem;
+}
+
+.contador-boton-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(18, 140, 126, 0.6);
+}
+
+.contador-icono-whatsapp {
+  font-size: 1.3rem;
+}
+
+/* Animaciones */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Adaptaciones para Tablet (768px+) */
+@media (min-width: 768px) {
+  .contador-container {
+    max-width: 700px;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+  }
+
+  .contador-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .contador-bloque {
+    min-width: 90px;
+  }
+
+  .contador-valor {
+    font-size: 3.5rem;
+    padding: 0.8rem;
+  }
+
+  .contador-etiqueta {
+    font-size: 0.8rem;
+  }
+
+  .contador-separador {
+    font-size: 2.5rem;
+  }
+
+  .contador-valor-adicional {
+    font-size: 1.8rem;
+  }
+
+  .contador-fecha {
+    font-size: 1.2rem;
+  }
+
+  .contador-icono-fecha {
+    font-size: 1.2rem;
+  }
+
+  .contador-boton-whatsapp {
+    font-size: 1rem;
+    padding: 1.2rem;
+  }
+}
+
+/* Adaptaciones para Escritorio (1024px+) */
+@media (min-width: 1024px) {
+  .contador-container {
+    max-width: 800px;
+    padding: 4rem;
+  }
+
+  .contador-title {
+    font-size: 3rem;
+    letter-spacing: 3px;
+  }
+
+  .contador-bloque {
+    min-width: 110px;
+  }
+
+  .contador-valor {
+    font-size: 4.5rem;
+  }
+
+  .contador-etiqueta {
+    font-size: 0.9rem;
+  }
+
+  .contador-separador {
+    font-size: 3rem;
+    margin-top: -1rem;
+  }
+
+  .contador-info-adicional {
+    gap: 1rem;
+  }
+
+  .contador-valor-adicional {
+    font-size: 2rem;
+  }
+
+  .contador-fecha {
+    font-size: 1.3rem;
+  }
+
+  .contador-boton-whatsapp {
+    font-size: 1.1rem;
+    padding: 1.3rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

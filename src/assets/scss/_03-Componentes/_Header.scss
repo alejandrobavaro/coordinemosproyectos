@@ -1,0 +1,154 @@
+/* ============ HEADER - MOBILE FIRST (0-412px) ============ */
+.app-header {
+  width: 100%;
+  max-width: 412px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1000;
+  font-family: "Montserrat", sans-serif;
+
+  .header-decoration-top,
+  .header-decoration-bottom {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #61dafb, #2c3e50, #61dafb, transparent);
+    opacity: 0.7;
+  }
+
+  .header-navbar {
+    background-color: rgba(30, 30, 30, 0.98);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    padding: 0;
+
+    .header-container {
+      padding: 8px 12px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      position: relative;
+    }
+  }
+
+  .header-logo {
+    order: 1;
+    padding: 0;
+    margin-right: auto;
+
+    .logo-image {
+      max-width: 70px;
+      height: auto;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .navbar-menu {
+    order: 2;
+    width: 100%;
+    padding: 10px 0;
+
+    .nav-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 0;
+
+      .nav-link {
+        color: #ffffff;
+        text-decoration: none;
+        background: none;
+        border: none;
+        text-align: center;
+        transition: color 0.3s ease;
+
+        .nav-label {
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        &:hover {
+          color: #4fa8d3;
+        }
+
+        &.active {
+          color: #2c3e50;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+/* ============ TABLET (768px+) ============ */
+@media (min-width: 768px) {
+  .app-header {
+    max-width: 100%;
+
+    .header-navbar {
+      .header-container {
+        max-width: 720px;
+        margin: 0 auto;
+        flex-wrap: nowrap;
+        padding: 6px 16px;
+      }
+
+      .header-logo {
+        .logo-image {
+          max-width: 80px;
+        }
+      }
+
+      .navbar-menu {
+        width: auto;
+        padding: 0;
+        margin-left: 20px;
+
+        .nav-links {
+          flex-direction: row;
+          gap: 16px;
+          padding: 0;
+
+          .nav-link {
+            padding: 6px 10px;
+
+            .nav-label {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ============ DESKTOP (1024px+) ============ */
+@media (min-width: 1024px) {
+  .app-header {
+    .header-navbar {
+      .header-container {
+        max-width: 960px;
+      }
+
+      .navbar-menu {
+        .nav-links {
+          gap: 24px;
+
+          .nav-link {
+            padding: 8px 12px;
+
+            .nav-label {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes baroqueFlow {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}

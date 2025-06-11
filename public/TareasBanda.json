@@ -1,0 +1,200 @@
+{
+  "categories": [
+    {
+      "id": "ensayos",
+      "name": "Ensayo",
+      "tasks": [
+        {
+          "id": "ensayo-1",
+          "name": "Confirmar horario de ensayo",
+          "assigned": "both",
+          "dueDate": "2024-11-01",
+          "completed": false
+        },
+        {
+          "id": "ensayo-2",
+          "name": "Preparar lista de canciones para ensayo",
+          "assigned": "alejandro",
+          "dueDate": "2024-11-05",
+          "completed": false
+        },
+        {
+          "id": "ensayo-3",
+          "name": "Ajustar equipos de sonido",
+          "assigned": "santiago",
+          "dueDate": "2024-11-10",
+          "completed": false
+        },
+        {
+          "id": "ensayo-4",
+          "name": "Coordinar transporte de equipos",
+          "assigned": "nicolas",
+          "dueDate": "2024-11-15",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "shows",
+      "name": "Shows",
+      "tasks": [
+        {
+          "id": "show-1",
+          "name": "Confirmar fecha del próximo show",
+          "assigned": "pato",
+          "dueDate": "2024-11-20",
+          "completed": false
+        },
+        {
+          "id": "show-2",
+          "name": "Preparar vestuario para el show",
+          "assigned": "both",
+          "dueDate": "2024-11-25",
+          "completed": false
+        },
+        {
+          "id": "show-3",
+          "name": "Coordinar con el lugar del evento",
+          "assigned": "alejandro",
+          "dueDate": "2024-12-01",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "promocion",
+      "name": "Promoción",
+      "tasks": [
+        {
+          "id": "promocion-1",
+          "name": "Diseñar afiches para redes sociales",
+          "assigned": "alejandro",
+          "dueDate": "2024-11-10",
+          "completed": false
+        },
+        {
+          "id": "promocion-2",
+          "name": "Contactar medios locales",
+          "assigned": "pato",
+          "dueDate": "2024-11-15",
+          "completed": false
+        },
+        {
+          "id": "promocion-3",
+          "name": "Publicar en redes sociales",
+          "assigned": "both",
+          "dueDate": "2024-11-20",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "equipos",
+      "name": "Equipos",
+      "tasks": [
+        {
+          "id": "equipos-1",
+          "name": "Mantener equipos de sonido",
+          "assigned": "santiago",
+          "dueDate": "2024-11-05",
+          "completed": false
+        },
+        {
+          "id": "equipos-2",
+          "name": "Revisar instrumentos musicales",
+          "assigned": "both",
+          "dueDate": "2024-11-10",
+          "completed": false
+        },
+        {
+          "id": "equipos-3",
+          "name": "Actualizar inventario de equipos",
+          "assigned": "nicolas",
+          "dueDate": "2024-11-15",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "redes",
+      "name": "Redes Sociales",
+      "tasks": [
+        {
+          "id": "redes-1",
+          "name": "Actualizar contenido en redes sociales",
+          "assigned": "pato",
+          "dueDate": "2024-11-01",
+          "completed": false
+        },
+        {
+          "id": "redes-2",
+          "name": "Responder a comentarios de fans",
+          "assigned": "alejandro",
+          "dueDate": "2024-11-05",
+          "completed": false
+        },
+        {
+          "id": "redes-3",
+          "name": "Publicar fotos y videos de ensayos",
+          "assigned": "both",
+          "dueDate": "2024-11-10",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "produccion",
+      "name": "Producción",
+      "tasks": [
+        {
+          "id": "produccion-1",
+          "name": "Grabar nuevo material",
+          "assigned": "both",
+          "dueDate": "2024-12-01",
+          "completed": false
+        },
+        {
+          "id": "produccion-2",
+          "name": "Mezclar pistas grabadas",
+          "assigned": "alejandro",
+          "dueDate": "2024-12-10",
+          "completed": false
+        },
+        {
+          "id": "produccion-3",
+          "name": "Masterizar canciones",
+          "assigned": "pato",
+          "dueDate": "2024-12-15",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "logistica",
+      "name": "Logística",
+      "tasks": [
+        {
+          "id": "logistica-1",
+          "name": "Coordinar transporte para equipos",
+          "assigned": "nicolas",
+          "dueDate": "2024-11-01",
+          "completed": false
+        },
+        {
+          "id": "logistica-2",
+          "name": "Organizar alojamiento para giras",
+          "assigned": "santiago",
+          "dueDate": "2024-11-10",
+          "completed": false
+        },
+        {
+          "id": "logistica-3",
+          "name": "Planificar comidas para el equipo",
+          "assigned": "both",
+          "dueDate": "2024-11-15",
+          "completed": false
+        }
+      ]
+    }
+  ]
+}

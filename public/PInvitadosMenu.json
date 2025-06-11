@@ -1,0 +1,195 @@
+{
+  "menuOptions": [
+    {
+      "id": "principios",
+      "name": "Para Comenzar",
+      "items": [
+        { 
+          "id": 1, 
+          "name": "Pernil al horno con especias", 
+          "selected": true, 
+          "restrictions": [], 
+          "description": "Pernil tierno cocido lentamente con hierbas aromáticas" 
+        },
+        { 
+          "id": 2, 
+          "name": "Pizetas variadas", 
+          "selected": true, 
+          "restrictions": ["gluten"], 
+          "description": "Mini pizzas de muzarella, jamón y morrones, y napolitana" 
+        },
+        { 
+          "id": 3, 
+          "name": "Hamburguesitas gourmet", 
+          "selected": true, 
+          "restrictions": [], 
+          "description": "Mini hamburguesas con queso cheddar, panceta y aderezos especiales" 
+        },
+        { 
+          "id": 4, 
+          "name": "Empanadas criollas", 
+          "selected": true, 
+          "restrictions": ["gluten"], 
+          "description": "Empanadas de carne, pollo y jamón & queso (identificadas)" 
+        }
+      ]
+    },
+    {
+      "id": "bebidas",
+      "name": "Bebidas Ilimitadas",
+      "items": [
+        { 
+          "id": 5, 
+          "name": "Vino tinto 'Viña Romance'", 
+          "selected": true, 
+          "restrictions": ["alcohol"], 
+          "description": "Vino tinto reserva especial para la boda" 
+        },
+        { 
+          "id": 6, 
+          "name": "Vino blanco 'Viña Romance'", 
+          "selected": true, 
+          "restrictions": ["alcohol"], 
+          "description": "Vino blanco fresco y frutal" 
+        },
+        { 
+          "id": 7, 
+          "name": "Cerveza artesanal 'Boda Feliz'", 
+          "selected": true, 
+          "restrictions": ["alcohol"], 
+          "description": "Cerveza rubia y negra especialmente elaborada" 
+        },
+        { 
+          "id": 8, 
+          "name": "Gaseosas y aguas saborizadas", 
+          "selected": true, 
+          "restrictions": [], 
+          "description": "Variedad de gaseosas y aguas con sabores naturales" 
+        },
+        { 
+          "id": 9, 
+          "name": "Champagne 'Amor Eterno'", 
+          "selected": true, 
+          "restrictions": ["alcohol"], 
+          "description": "Para el brindis especial" 
+        }
+      ]
+    },
+    {
+      "id": "barra-tragos",
+      "name": "Barra de Tragos (hacia el final)",
+      "items": [
+        { 
+          "id": 10, 
+          "name": "Fernet con cola", 
+          "selected": true, 
+          "restrictions": ["alcohol"], 
+          "description": "El clásico argentino" 
+        },
+        { 
+          "id": 11, 
+          "name": "Gin Tonic", 
+          "selected": true, 
+          "restrictions": ["alcohol"], 
+          "description": "Con frutas frescas y hierbas" 
+        },
+        { 
+          "id": 12, 
+          "name": "Cuba Libre", 
+          "selected": true, 
+          "restrictions": ["alcohol"], 
+          "description": "Ron con Coca-Cola y limón" 
+        },
+        { 
+          "id": 13, 
+          "name": "Destornillador", 
+          "selected": true, 
+          "restrictions": ["alcohol"], 
+          "description": "Vodka con jugo de naranja" 
+        },
+        { 
+          "id": 14, 
+          "name": "Jugos naturales para tragos sin alcohol", 
+          "selected": true, 
+          "restrictions": [], 
+          "description": "Variedad de jugos para mezclar" 
+        }
+      ]
+    },
+    {
+      "id": "postres",
+      "name": "Mesa Dulce y Torta",
+      "items": [
+        { 
+          "id": 15, 
+          "name": "Torta de bodas de 3 pisos", 
+          "selected": true, 
+          "restrictions": ["gluten", "lacteos"], 
+          "description": "Bizcocho de vainilla y chocolate con relleno de dulce de leche y crema" 
+        },
+        { 
+          "id": 16, 
+          "name": "Tableta de chocolates", 
+          "selected": true, 
+          "restrictions": ["lacteos"], 
+          "description": "Variedad de chocolates artesanales" 
+        },
+        { 
+          "id": 17, 
+          "name": "Alfajores de maicena", 
+          "selected": true, 
+          "restrictions": ["gluten", "lacteos"], 
+          "description": "Los clásicos alfajores rellenos de dulce de leche" 
+        },
+        { 
+          "id": 18, 
+          "name": "Frutas frescas", 
+          "selected": true, 
+          "restrictions": [], 
+          "description": "Selección de frutas de estación" 
+        }
+      ]
+    },
+    {
+      "id": "cierre",
+      "name": "Desayuno de Cierre",
+      "items": [
+        { 
+          "id": 19, 
+          "name": "Pizza de desayuno", 
+          "selected": true, 
+          "restrictions": ["gluten"], 
+          "description": "Pizzas recién horneadas para reponer energías" 
+        },
+        { 
+          "id": 20, 
+          "name": "Café y té", 
+          "selected": true, 
+          "restrictions": [], 
+          "description": "Para acompañar el cierre de la fiesta" 
+        },
+        { 
+          "id": 21, 
+          "name": "Medialunas calentitas", 
+          "selected": true, 
+          "restrictions": ["gluten"], 
+          "description": "Recién horneadas para el desayuno" 
+        }
+      ]
+    }
+  ],
+  "dietaryRestrictions": [
+    { "id": "vegetariano", "name": "Vegetariano", "count": 0 },
+    { "id": "vegano", "name": "Vegano", "count": 0 },
+    { "id": "gluten", "name": "Sin gluten", "count": 5 },
+    { "id": "lacteos", "name": "Sin lácteos", "count": 3 },
+    { "id": "alcohol", "name": "Sin alcohol", "count": 8 }
+  ],
+  "tableArrangement": [
+    { "id": 1, "name": "Mesa Principal", "capacity": 10, "guests": ["Alejandro", "Fabiola", "Padres", "Abuelos", "Padrinos"] },
+    { "id": 2, "name": "Mesa Familia Novio", "capacity": 8, "guests": ["Tíos", "Primos"] },
+    { "id": 3, "name": "Mesa Familia Novia", "capacity": 8, "guests": ["Tíos", "Primos"] },
+    { "id": 4, "name": "Mesa Amigos", "capacity": 10, "guests": ["Amigos universidad", "Amigos infancia"] },
+    { "id": 5, "name": "Mesa Compañeros Trabajo", "capacity": 6, "guests": ["Compañeros Fabiola", "Compañeros Alejandro"] }
+  ]
+}

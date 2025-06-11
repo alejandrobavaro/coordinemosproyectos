@@ -1,0 +1,45 @@
+/* ==========================================================================
+   COMPONENTE WHATSAPP ICON - Mobile First
+   ========================================================================== */
+
+   .telefonoWhatsappMainHome {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    
+    .logoWhatsappMainHome {
+      width: 60px;
+      height: auto;
+      transition: transform 0.3s ease;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  
+      &:hover {
+        transform: scale(1.1);
+        filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.3));
+      }
+    }
+  }
+  
+  /* Tablet (768px+)
+     ========================================================================== */
+  @media (min-width: 768px) {
+    .telefonoWhatsappMainHome {
+      bottom: 15px;
+      right: 15px;
+      
+      .logoWhatsappMainHome {
+        width: 70px;
+      }
+    }
+  }
+  
+  /* Desktop (992px+)
+     ========================================================================== */
+  @media (min-width: 992px) {
+    .telefonoWhatsappMainHome {
+      .logoWhatsappMainHome {
+        width: 80px;
+      }
+    }
+  }

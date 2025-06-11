@@ -1,0 +1,352 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "nombre": "Asistencia a ensayo",
+            "descripcion": "Asistencia al ensayo semanal",
+            "puntos": 10
+        },
+        {
+            "id": 2,
+            "nombre": "Proveer sala de ensayo",
+            "descripcion": "Proveer la sala de ensayo para la banda",
+            "puntos": 20
+        },
+        {
+            "id": 3,
+            "nombre": "Prestar batería",
+            "descripcion": "Prestar la batería para los ensayos",
+            "puntos": 15
+        },
+        {
+            "id": 4,
+            "nombre": "Buscar fechas para tocar",
+            "descripcion": "Buscar y gestionar fechas para presentaciones",
+            "puntos": 25
+        },
+        {
+            "id": 5,
+            "nombre": "Diseño de logo",
+            "descripcion": "Diseñar el logo de la banda",
+            "puntos": 30
+        },
+        {
+            "id": 6,
+            "nombre": "Publicar en redes sociales",
+            "descripcion": "Publicar contenido en redes sociales",
+            "puntos": 5
+        },
+        {
+            "id": 7,
+            "nombre": "Arreglar equipos",
+            "descripcion": "Arreglar equipos rotos o cables",
+            "puntos": 20
+        },
+        {
+            "id": 8,
+            "nombre": "Traer bebidas",
+            "descripcion": "Traer bebidas para los ensayos",
+            "puntos": 5
+        },
+        {
+            "id": 9,
+            "nombre": "Proponer ideas nuevas",
+            "descripcion": "Proponer ideas nuevas para la banda",
+            "puntos": 10
+        },
+        {
+            "id": 10,
+            "nombre": "Producción de pistas",
+            "descripcion": "Producción de pistas musicales",
+            "puntos": 30
+        },
+        {
+            "id": 11,
+            "nombre": "Diseño de banner para shows",
+            "descripcion": "Diseñar banners para los shows en vivo",
+            "puntos": 25
+        },
+        {
+            "id": 12,
+            "nombre": "Conseguir vestuario",
+            "descripcion": "Conseguir vestuario para la banda",
+            "puntos": 15
+        },
+        {
+            "id": 13,
+            "nombre": "Organizar evento",
+            "descripcion": "Organizar un evento o concierto",
+            "puntos": 35
+        },
+        {
+            "id": 14,
+            "nombre": "Gestionar contratos",
+            "descripcion": "Gestionar contratos para presentaciones",
+            "puntos": 30
+        },
+        {
+            "id": 15,
+            "nombre": "Crear contenido multimedia",
+            "descripcion": "Crear videos o fotos para promocionar la banda",
+            "puntos": 25
+        },
+        {
+            "id": 16,
+            "nombre": "Mantenimiento de instrumentos",
+            "descripcion": "Realizar mantenimiento regular de los instrumentos",
+            "puntos": 15
+        },
+        {
+            "id": 17,
+            "nombre": "Comprar materiales",
+            "descripcion": "Comprar materiales necesarios para la banda",
+            "puntos": 20
+        },
+        {
+            "id": 18,
+            "nombre": "Diseñar merchandising",
+            "descripcion": "Diseñar productos de merchandising para la banda",
+            "puntos": 25
+        },
+        {
+            "id": 19,
+            "nombre": "Planificar gira",
+            "descripcion": "Planificar una gira o tour",
+            "puntos": 40
+        },
+        {
+            "id": 20,
+            "nombre": "Ensayo extra",
+            "descripcion": "Organizar o asistir a un ensayo extra",
+            "puntos": 15
+        },
+        {
+            "id": 21,
+            "nombre": "Crear playlist",
+            "descripcion": "Crear una playlist para un evento",
+            "puntos": 10
+        },
+        {
+            "id": 22,
+            "nombre": "Gestionar redes sociales",
+            "descripcion": "Gestionar y moderar las redes sociales de la banda",
+            "puntos": 20
+        },
+        {
+            "id": 23,
+            "nombre": "Escribir canciones",
+            "descripcion": "Escribir nuevas canciones para la banda",
+            "puntos": 30
+        },
+        {
+            "id": 24,
+            "nombre": "Grabar demo",
+            "descripcion": "Grabar un demo de una nueva canción",
+            "puntos": 25
+        },
+        {
+            "id": 25,
+            "nombre": "Diseñar página web",
+            "descripcion": "Diseñar o actualizar la página web de la banda",
+            "puntos": 35
+        },
+        {
+            "id": 26,
+            "nombre": "Coordinar con otros artistas",
+            "descripcion": "Coordinar colaboraciones con otros artistas",
+            "puntos": 20
+        },
+        {
+            "id": 27,
+            "nombre": "Crear base de datos de fans",
+            "descripcion": "Crear y mantener una base de datos de fans",
+            "puntos": 15
+        },
+        {
+            "id": 28,
+            "nombre": "Organizar sesión de fotos",
+            "descripcion": "Organizar una sesión de fotos para la banda",
+            "puntos": 20
+        },
+        {
+            "id": 29,
+            "nombre": "Diseñar escenografía",
+            "descripcion": "Diseñar la escenografía para un show",
+            "puntos": 25
+        },
+        {
+            "id": 30,
+            "nombre": "Gestionar derechos de autor",
+            "descripcion": "Gestionar los derechos de autor de las canciones",
+            "puntos": 30
+        },
+        {
+            "id": 31,
+            "nombre": "Crear newsletter",
+            "descripcion": "Crear y enviar un newsletter a los fans",
+            "puntos": 15
+        },
+        {
+            "id": 32,
+            "nombre": "Organizar taller",
+            "descripcion": "Organizar un taller o workshop",
+            "puntos": 20
+        },
+        {
+            "id": 33,
+            "nombre": "Diseñar afiches",
+            "descripcion": "Diseñar afiches para promocionar eventos",
+            "puntos": 20
+        },
+        {
+            "id": 34,
+            "nombre": "Gestionar agenda",
+            "descripcion": "Gestionar la agenda de la banda",
+            "puntos": 15
+        },
+        {
+            "id": 35,
+            "nombre": "Crear contenido para blog",
+            "descripcion": "Crear contenido para el blog de la banda",
+            "puntos": 20
+        },
+        {
+            "id": 36,
+            "nombre": "Organizar reunión",
+            "descripcion": "Organizar una reunión de planificación",
+            "puntos": 10
+        },
+        {
+            "id": 37,
+            "nombre": "Diseñar arte para álbum",
+            "descripcion": "Diseñar el arte para un álbum",
+            "puntos": 30
+        },
+        {
+            "id": 38,
+            "nombre": "Gestionar inventario",
+            "descripcion": "Gestionar el inventario de equipos y materiales",
+            "puntos": 15
+        },
+        {
+            "id": 39,
+            "nombre": "Crear estrategia de marketing",
+            "descripcion": "Crear una estrategia de marketing para la banda",
+            "puntos": 25
+        },
+        {
+            "id": 40,
+            "nombre": "Organizar fiesta de lanzamiento",
+            "descripcion": "Organizar una fiesta de lanzamiento",
+            "puntos": 30
+        },
+        {
+            "id": 41,
+            "nombre": "Diseñar merchandising especial",
+            "descripcion": "Diseñar merchandising especial para eventos",
+            "puntos": 25
+        },
+        {
+            "id": 42,
+            "nombre": "Gestionar patrocinios",
+            "descripcion": "Gestionar patrocinios para la banda",
+            "puntos": 30
+        },
+        {
+            "id": 43,
+            "nombre": "Crear contenido para YouTube",
+            "descripcion": "Crear contenido exclusivo para YouTube",
+            "puntos": 20
+        },
+        {
+            "id": 44,
+            "nombre": "Organizar sesión de grabación",
+            "descripcion": "Organizar una sesión de grabación en estudio",
+            "puntos": 35
+        },
+        {
+            "id": 45,
+            "nombre": "Diseñar material promocional",
+            "descripcion": "Diseñar material promocional para la banda",
+            "puntos": 20
+        },
+        {
+            "id": 46,
+            "nombre": "Gestionar lista de correo",
+            "descripcion": "Gestionar la lista de correo de fans",
+            "puntos": 15
+        },
+        {
+            "id": 47,
+            "nombre": "Crear podcast",
+            "descripcion": "Crear un podcast para la banda",
+            "puntos": 25
+        },
+        {
+            "id": 48,
+            "nombre": "Organizar evento benéfico",
+            "descripcion": "Organizar un evento benéfico",
+            "puntos": 30
+        },
+        {
+            "id": 49,
+            "nombre": "Diseñar contenido interactivo",
+            "descripcion": "Diseñar contenido interactivo para fans",
+            "puntos": 20
+        },
+        {
+            "id": 50,
+            "nombre": "Gestionar colaboraciones",
+            "descripcion": "Gestionar colaboraciones con otras bandas",
+            "puntos": 25
+        },
+        {
+            "id": 51,
+            "nombre": "Crear contenido para TikTok",
+            "descripcion": "Crear contenido exclusivo para TikTok",
+            "puntos": 15
+        },
+        {
+            "id": 52,
+            "nombre": "Organizar sesión de firma de autógrafos",
+            "descripcion": "Organizar una sesión de firma de autógrafos",
+            "puntos": 20
+        },
+        {
+            "id": 53,
+            "nombre": "Diseñar contenido para Instagram",
+            "descripcion": "Diseñar contenido exclusivo para Instagram",
+            "puntos": 15
+        },
+        {
+            "id": 54,
+            "nombre": "Gestionar contenido para Twitter",
+            "descripcion": "Gestionar y crear contenido para Twitter",
+            "puntos": 15
+        },
+        {
+            "id": 55,
+            "nombre": "Crear contenido para Facebook",
+            "descripcion": "Crear contenido exclusivo para Facebook",
+            "puntos": 15
+        },
+        {
+            "id": 56,
+            "nombre": "Organizar sesión de preguntas y respuestas",
+            "descripcion": "Organizar una sesión de preguntas y respuestas con fans",
+            "puntos": 20
+        },
+        {
+            "id": 57,
+            "nombre": "Diseñar contenido para LinkedIn",
+            "descripcion": "Diseñar contenido exclusivo para LinkedIn",
+            "puntos": 15
+        },
+        {
+            "id": 58,
+            "nombre": "Gestionar contenido para Pinterest",
+            "descripcion": "Gestionar y crear contenido para Pinterest",
+            "puntos": 15
+        }
+    ]
+}

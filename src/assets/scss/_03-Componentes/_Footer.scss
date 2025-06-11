@@ -1,0 +1,234 @@
+/* Animación de la línea barroca */
+@keyframes baroqueFlow {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
+
+/* Estructura Base - Mobile (0-767px) */
+.footer {
+  background-color: rgba(30, 30, 30, 0.9);
+  font-family: 'Montserrat', sans-serif;
+  color: #e0e0e0;
+  padding: 20px 0 10px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  max-width: 412px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  /* Línea decorativa inferior */
+  .baroque-line-bottom {
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, #61dafb, #2c3e50, #61dafb, transparent);
+    background-size: 200% 100%;
+    animation: baroqueFlow 8s linear infinite;
+    opacity: 0.7;
+    margin-top: 15px;
+  }
+
+  /* Botón de contacto */
+  .contact-btn-container {
+    margin-bottom: 20px;
+    text-align: center;
+
+    .contact-btn {
+      display: inline-block;
+      padding: 10px 25px;
+      background-color: #a1a1a1;
+      color: #121212;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 1px;
+      border-radius: 25px;
+      border: 2px solid #2c3e50;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #4fa8d3;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      &:active {
+        transform: translateY(1px);
+      }
+    }
+  }
+
+  /* Contenido principal del footer */
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  /* Redes sociales */
+  .social-links-container {
+    width: 100%;
+
+    .social-links {
+      display: flex;
+      justify-content: space-around;
+
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #ffffff;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-weight: 600;
+
+        &:hover {
+          color: #4fa8d3;
+
+          .social-icon {
+            transform: translateY(-3px);
+          }
+        }
+
+        span {
+          font-size: 0.8rem;
+          margin-top: 5px;
+          display: none;
+        }
+      }
+    }
+
+    .social-icon {
+      font-size: 1.4rem;
+      transition: all 0.3s ease;
+    }
+  }
+
+  /* Copyright */
+  .copyright-container {
+    text-align: center;
+    padding: 10px 0 5px;
+
+    .copyright-content {
+      a {
+        color: #c0862f;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s ease;
+        font-size: 0.8rem;
+
+        &:hover {
+          color: #4fa8d3;
+
+          .copyright-icon {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      .copyright-icon {
+        display: inline-block;
+        transition: all 0.6s ease;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+/* Tablet (768px+) */
+@media (min-width: 768px) {
+  .footer {
+    max-width: 100%;
+    padding: 25px 0 15px;
+
+    .baroque-line-bottom {
+      margin-top: 20px;
+    }
+
+    .contact-btn-container {
+      margin-bottom: 30px;
+
+      .contact-btn {
+        padding: 12px 30px;
+        font-size: 0.9rem;
+      }
+    }
+
+    .footer-content {
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .social-links-container {
+      .social-links {
+        gap: 20px;
+        justify-content: center;
+
+        a span {
+          display: block;
+          font-size: 0.85rem;
+        }
+      }
+
+      .social-icon {
+        font-size: 1.5rem;
+      }
+    }
+
+    .copyright-container {
+      padding: 15px 0 5px;
+
+      .copyright-content {
+        a {
+          font-size: 0.9rem;
+          gap: 10px;
+        }
+
+        .copyright-icon {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
+/* Desktop pequeño (992px+) */
+@media (min-width: 992px) {
+  .footer {
+    .footer-content {
+      max-width: 900px;
+    }
+
+    .social-links-container {
+      .social-links {
+        gap: 30px;
+
+        a span {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+/* Desktop grande (1200px+) */
+@media (min-width: 1200px) {
+  .footer {
+    .footer-content {
+      max-width: 1100px;
+    }
+  }
+}

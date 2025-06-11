@@ -1,0 +1,64 @@
+.public-container {
+  width: 100%;
+  max-width: 412px;
+  margin: 0 auto;
+  padding: 0;
+  background: transparent;
+  overflow-x: hidden;
+}
+
+.project-journal {
+  font-family: 'Montserrat', sans-serif;
+  color: #e0e0e0;
+  line-height: 1.5;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+.journal-header {
+  text-align: center;
+  padding: 0.5rem 0;
+
+  h1 {
+    font-size: 1.6rem;
+    color: #ffffff;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: #bea787;
+    font-style: italic;
+    margin: 0;
+  }
+}
+
+.home-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Estilos adicionales para los componentes incluidos */
+.home-sections > * {
+  width: 100%;
+}
+
+/* Media Queries para diferentes tamaños de pantalla */
+@media (min-width: 600px) {
+  .public-container {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 768px) {
+  .public-container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .public-container {
+    max-width: 1024px;
+  }
+}

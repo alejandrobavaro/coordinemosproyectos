@@ -1,0 +1,431 @@
+/* Estilos Mobile First para Novedades */
+.novedades-container {
+  width: 100%;
+  max-width: 412px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 2px;
+      background: #ffffff;
+      margin: 0.5rem auto;
+    }
+  }
+
+  .magazine-subtitle,
+  .news-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: #bdbdbd;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Estilos Revista */
+.band-magazine {
+  margin-bottom: 2rem;
+  background: rgba(45, 45, 45, 0.9);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+
+  .magazine-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-image-container {
+    width: 100%;
+    margin-bottom: 1rem;
+
+    .page-image {
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 6px;
+      position: relative;
+
+      .page-header {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+        padding: 1rem;
+        color: white;
+
+        h3 {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1.3rem;
+          margin: 0 0 0.2rem;
+          color: white;
+
+          &::after {
+            display: none;
+          }
+        }
+
+        .page-date {
+          font-size: 0.8rem;
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+
+  .page-content {
+    p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #bdbdbd;
+      margin-bottom: 1rem;
+    }
+
+    blockquote {
+      font-style: italic;
+      border-left: 2px solid #ffffff;
+      padding-left: 1rem;
+      margin: 1rem 0;
+      color: #bdbdbd;
+
+      cite {
+        display: block;
+        font-style: normal;
+        font-weight: bold;
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2rem;
+      color: #ffeedf;
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin-bottom: 1rem;
+
+      li {
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
+      }
+    }
+
+    .planning-details,
+    .ring-specs {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.8rem;
+      margin: 1rem 0;
+
+      .detail-item {
+        background: rgba(97, 218, 251, 0.1);
+        padding: 0.8rem;
+        border-radius: 6px;
+
+        h5 {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1rem;
+          margin: 0 0 0.3rem;
+          color: #d4d4d4;
+        }
+      }
+    }
+  }
+
+  .page-gallery {
+    margin-top: 1.5rem;
+
+    h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem;
+
+      .gallery-item {
+        img {
+          width: 100%;
+          height: 100px;
+          object-fit: cover;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+
+  .page-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #c7c7c7;
+
+    .page-indicator {
+      font-size: 0.9rem;
+      color: #b9b9b9;
+      margin-bottom: 0.8rem;
+    }
+
+    .navigation-buttons {
+      display: flex;
+      gap: 1rem;
+
+      button {
+        padding: 0.6rem 1.2rem;
+        background: #c4c4c4;
+        color: #121212;
+        border: none;
+        border-radius: 4px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: background 0.2s;
+
+        &:hover:not(:disabled) {
+          background: #fff6ce;
+        }
+
+        &:disabled {
+          background: #888888;
+          cursor: not-allowed;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+/* Estilos Noticias */
+.news-section {
+  background: rgba(45, 45, 45, 0.9);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+
+  .news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .news-card {
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 1rem;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &.expanded {
+      .news-full-content {
+        display: block;
+      }
+
+      .news-excerpt {
+        display: none;
+      }
+    }
+
+    .news-image {
+      width: 100%;
+      height: 180px;
+      margin-bottom: 0.8rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+    }
+
+    .news-content {
+      .news-category {
+        display: inline-block;
+        background: rgba(97, 218, 251, 0.1);
+        color: #e9e9e9;
+        padding: 0.2rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+      }
+
+      h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        color: #e2e2e2;
+        margin: 0.3rem 0;
+      }
+
+      time {
+        display: block;
+        font-size: 0.8rem;
+        color: #bdbdbd;
+        margin-bottom: 0.5rem;
+      }
+
+      .news-excerpt {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: #bdbdbd;
+        margin-bottom: 0.8rem;
+      }
+
+      .news-full-content {
+        display: none;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: #bdbdbd;
+
+        p {
+          margin-bottom: 0.8rem;
+        }
+
+        .news-gallery {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 0.5rem;
+          margin: 1rem 0;
+
+          img {
+            width: 100%;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+
+    .news-toggle {
+      background: none;
+      border: none;
+      color: #ffffff;
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.9rem;
+      cursor: pointer;
+      padding: 0.3rem 0;
+      display: flex;
+      align-items: center;
+
+      &::after {
+        content: '→';
+        margin-left: 0.3rem;
+        transition: transform 0.2s;
+      }
+
+      &:hover::after {
+        transform: translateX(2px);
+      }
+    }
+  }
+}
+
+/* Tablet (768px+) */
+@media (min-width: 768px) {
+  .novedades-container {
+    max-width: 700px;
+    padding: 1.5rem;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .band-magazine {
+    .magazine-page {
+      flex-direction: row;
+      gap: 1.5rem;
+    }
+
+    .page-image-container {
+      width: 45%;
+      margin-bottom: 0;
+
+      .page-image {
+        height: 300px;
+      }
+    }
+
+    .page-content {
+      width: 55%;
+    }
+
+    .gallery-grid {
+      grid-template-columns: repeat(3, 1fr) !important;
+
+      .gallery-item img {
+        height: 120px !important;
+      }
+    }
+  }
+
+  .news-section {
+    .news-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+
+      .news-card {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+/* Desktop (992px+) */
+@media (min-width: 992px) {
+  .novedades-container {
+    max-width: 900px;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .band-magazine {
+    .page-image {
+      height: 350px !important;
+    }
+
+    .gallery-grid {
+      .gallery-item img {
+        height: 150px !important;
+      }
+    }
+  }
+
+  .news-section {
+    .news-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

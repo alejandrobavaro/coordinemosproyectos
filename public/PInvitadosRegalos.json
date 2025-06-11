@@ -1,0 +1,154 @@
+{
+  "wishlist": [
+    {
+      "id": 1,
+      "name": "CBU para la Luna de Miel",
+      "description": "Ayudanos a cumplir nuestro sueño de viaje de luna de miel",
+      "price": 0,
+      "reserved": false,
+      "category": "Contribución",
+      "image": "/img/09-regalos/regalo1.jpeg",
+      "bankDetails": {
+        "cbu": "1234567890123456789012",
+        "alias": "ALE.Y.FABI.LUNAMIEL",
+        "bank": "Banco del Amor",
+        "accountHolder": "Alejandro Bavaro & Fabiola Lutrario"
+      },
+      "notes": "Cualquier aporte nos ayudará a vivir nuestro sueño de luna de miel. ¡Gracias!"
+    },
+    {
+      "id": 2,
+      "name": "CBU para la Fiesta de Casamiento",
+      "description": "Contribución para los gastos de nuestra celebración",
+      "price": 0,
+      "reserved": false,
+      "category": "Contribución",
+      "image": "/img/09-regalos/regalo2.jpeg",
+      "bankDetails": {
+        "cbu": "9876543210987654321098",
+        "alias": "BODA.ALEYFABI.2024",
+        "bank": "Banco de la Felicidad",
+        "accountHolder": "Alejandro Bavaro & Fabiola Lutrario"
+      },
+      "notes": "Tu contribución nos ayudará a hacer esta fiesta inolvidable"
+    },
+    {
+      "id": 3,
+      "name": "Freidora de Aire Oster",
+      "description": "Freidora de aire digital de 5.5L con 6 funciones preseleccionadas",
+      "price": 89999,
+      "reserved": false,
+      "category": "Electrodomésticos",
+      "image": "/img/09-regalos/regalo3.jpeg",
+      "storeLinks": [
+        {
+          "name": "Fravega",
+          "url": "https://www.fravega.com/p/freidora-de-aire-oster-55l-digital-afd55d"
+        },
+        {
+          "name": "Mercado Libre",
+          "url": "https://articulo.mercadolibre.com.ar/MLA-123456789-freidora-aire-oster-55l-digital-_JM"
+        }
+      ],
+      "notes": "Modelo: AFD55D - Color negro preferido"
+    },
+    {
+      "id": 4,
+      "name": "Set de Utensilios de Cocina",
+      "description": "Set básico de 15 piezas de acero inoxidable",
+      "price": 25999,
+      "reserved": false,
+      "category": "Hogar",
+      "image": "/img/09-regalos/regalo4.jpeg",
+      "storeLinks": [
+        {
+          "name": "Coto",
+          "url": "https://www.coto.com.ar/set-utensilios-cocina-15-piezas"
+        }
+      ],
+      "notes": "Incluir cuchara, espátula, pinzas, etc."
+    },
+    {
+      "id": 5,
+      "name": "Juego de Toallas",
+      "description": "Set de 6 toallas (2 baño, 2 manos, 2 rostro)",
+      "price": 18999,
+      "reserved": false,
+      "category": "Hogar",
+      "image": "/img/09-regalos/regalo5.jpeg",
+      "storeLinks": [
+        {
+          "name": "Falabella",
+          "url": "https://www.falabella.com.ar/juego-toallas-6-piezas"
+        }
+      ],
+      "notes": "Color gris claro o beige"
+    },
+    {
+      "id": 6,
+      "name": "Licuadora Philips",
+      "description": "Licuadora de 600W con jarra de vidrio",
+      "price": 42999,
+      "reserved": false,
+      "category": "Electrodomésticos",
+      "image": "/img/09-regalos/regalo6.jpeg",
+      "storeLinks": [
+        {
+          "name": "Garbarino",
+          "url": "https://www.garbarino.com/licuadora-philips-600w"
+        }
+      ],
+      "notes": "Modelo HR2105/00"
+    },
+    {
+      "id": 7,
+      "name": "Set de Ollas Antiadherentes",
+      "description": "Juego de 3 ollas con tapa de vidrio",
+      "price": 34999,
+      "reserved": false,
+      "category": "Hogar",
+      "image": "/img/09-regalos/regalo7.jpeg",
+      "storeLinks": [
+        {
+          "name": "Carrefour",
+          "url": "https://www.carrefour.com.ar/set-ollas-antiadherentes-3-piezas"
+        }
+      ],
+      "notes": "Marca Tramontina o similar"
+    },
+    {
+      "id": 8,
+      "name": "Tostadora Black+Decker",
+      "description": "Tostadora de 2 ranuras con control de tostado",
+      "price": 15999,
+      "reserved": false,
+      "category": "Electrodomésticos",
+      "image": "/img/09-regalos/regalo8.jpeg",
+      "storeLinks": [
+        {
+          "name": "Musimundo",
+          "url": "https://www.musimundo.com/tostadora-black-decker-2-ranuras"
+        }
+      ],
+      "notes": "Modelo TR2500SB"
+    },
+    {
+      "id": 9,
+      "name": "Cafetera Eléctrica",
+      "description": "Cafetera de goteo programable para 12 tazas",
+      "price": 24999,
+      "reserved": false,
+      "category": "Electrodomésticos",
+      "image": "/img/09-regalos/regalo10.jpeg",
+      "storeLinks": [
+        {
+          "name": "Cetrogar",
+          "url": "https://www.cetrogar.com.ar/cafetera-electrica-12-tazas"
+        }
+      ],
+      "notes": "Con filtro permanente incluido"
+    }
+      ],
+      "notes": "Diseño simple y moderno"
+    }
+  

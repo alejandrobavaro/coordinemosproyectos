@@ -1,0 +1,62 @@
+[
+    {
+        "Id": 1,
+        "Musico": "Ale Gondra",
+        "Instrumento": ["1era Voz Cantante", "Coros", "Guitarra Acustica"],
+        "Aportes de Translado": "Tiene Camioneta",
+        "Aportes de Produccion": ["Productor Musical", "Productor Visual"],
+        "Aportes de Diseño": ["Diseño Grafico", "Desarrollo Web"],
+        "Aportes de Publicidad": "-",
+        "Otros Aportes": ""
+    },
+    {
+        "Id": 2,
+        "Musico": "Pato Conti",
+        "Instrumento": ["1era Voz Cantante", "Coros", "Tecladista"],
+        "Aportes de Translado": "Tiene Auto",
+        "Aportes de Produccion": "Productor Musical",
+        "Aportes de Diseño": ["Diseño Grafico", "Desarrollo Mobile"],
+        "Aportes de Publicidad": "Manejo de Campañas Publicitarias Adds",
+        "Otros Aportes": ""
+    },
+    {
+        "Id": 3,
+        "Musico": "Nicolas Traficando",
+        "Instrumento": ["Bajista", "Coros"],
+        "Aportes de Translado": "Tiene Auto",
+        "Aportes de Produccion": "-",
+        "Aportes de Diseño": "-",
+        "Aportes de Publicidad": "-",
+        "Otros Aportes": ""
+    },
+    {
+        "Id": 4,
+        "Musico": "Santiago Sotille",
+        "Instrumento": "Bateria",
+        "Aportes de Translado": "Tiene Camioneta",
+        "Aportes de Produccion": "-",
+        "Aportes de Diseño": "-",
+        "Aportes de Publicidad": "-",
+        "Otros Aportes": ""
+    },
+    {
+        "Id": 5,
+        "Musico": "xxxx",
+        "Instrumento": "-",
+        "Aportes de Translado": "-",
+        "Aportes de Produccion": "-",
+        "Aportes de Diseño": "-",
+        "Aportes de Publicidad": "-",
+        "Otros Aportes": ""
+    },
+    {
+        "Id": 6,
+        "Musico": "xxxx",
+        "Instrumento": "-",
+        "Aportes de Translado": "-",
+        "Aportes de Produccion": "-",
+        "Aportes de Diseño": "-",
+        "Aportes de Publicidad": "-",
+        "Otros Aportes": ""
+    }
+]
