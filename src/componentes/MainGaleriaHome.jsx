@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import "../assets/scss/_03-Componentes/_MainGaleriaHome.scss";
 
 function MainGaleriaHome() {
-  // Configuración del slider mejorada para responsive
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -44,8 +43,7 @@ function MainGaleriaHome() {
     ]
   };
 
-  // Estado para las imágenes
-  const [fotos, setFotos] = useState([
+  const [fotos] = useState([
     { id: 1, src: "/img/06-img-galeria3/id1-c1.png", category: "Show en vivo" },
     { id: 2, src: "/img/06-img-galeria3/id2-c2.png", category: "Ensayos" },
     { id: 3, src: "/img/06-img-galeria3/id3-c3.png", category: "Backstage" },
@@ -68,7 +66,6 @@ function MainGaleriaHome() {
     { id: 20, src: "/img/06-img-galeria3/id20-c20.png", category: "Fans" },
   ]);
 
-  // Efecto para actualizar las flechas al redimensionar
   useEffect(() => {
     const handleResize = () => {
       sliderSettings.arrows = window.innerWidth > 768;
@@ -78,7 +75,6 @@ function MainGaleriaHome() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Función para manejar errores de imagen
   const handleImageError = (e) => {
     e.target.src = '/img/placeholder-galeria.png';
     e.target.alt = 'Imagen no disponible';

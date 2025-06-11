@@ -1,26 +1,36 @@
 /* ============ HEADER - MOBILE FIRST (0-412px) ============ */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
 .app-header {
   width: 100%;
   max-width: 412px;
   margin: 0 auto;
   position: relative;
   z-index: 1000;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Special Elite', cursive;
+  text-transform: uppercase;
+  background-color: rgba(25, 25, 25, 0.98);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(255, 228, 179, 0.2);
 
-  .header-decoration-top,
-  .header-decoration-bottom {
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #61dafb, #2c3e50, #61dafb, transparent);
-    opacity: 0.7;
+  .header-decoration {
+    height: 3px;
+    background: linear-gradient(90deg, 
+      transparent, 
+      rgba(255, 228, 179, 0.7), 
+      rgba(255, 203, 124, 0.7), 
+      rgba(255, 228, 179, 0.7), 
+      transparent);
+    animation: shimmer 3s infinite linear;
+    background-size: 200% 100%;
   }
 
   .header-navbar {
-    background-color: rgba(30, 30, 30, 0.98);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     padding: 0;
+    background: transparent;
 
     .header-container {
-      padding: 8px 12px;
+      padding: 10px 15px;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -32,49 +42,103 @@
     order: 1;
     padding: 0;
     margin-right: auto;
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
 
     .logo-image {
-      max-width: 70px;
+      max-width: 65px;
       height: auto;
-      transition: transform 0.3s ease;
+      transition: all 0.3s ease;
+      border-radius: 4px;
 
       &:hover {
         transform: scale(1.05);
+        filter: drop-shadow(0 0 5px rgba(255, 228, 179, 0.5));
       }
     }
   }
 
-  .navbar-menu {
+  .menu-toggle {
     order: 2;
+    border: none;
+    background: transparent;
+    color: #ffe4b3;
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: rgba(255, 228, 179, 0.1);
+      transform: rotate(90deg);
+    }
+
+    .menu-icon {
+      filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+    }
+  }
+
+  .navbar-menu {
+    order: 3;
     width: 100%;
     padding: 10px 0;
+    background: rgba(20, 20, 20, 0.95);
 
     .nav-links {
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+      flex-direction: column;
       padding: 0;
 
       .nav-link {
-        color: #ffffff;
+        position: relative;
+        color: #e0e0e0;
         text-decoration: none;
-        background: none;
-        border: none;
-        text-align: center;
-        transition: color 0.3s ease;
+        padding: 12px 20px;
+        margin: 5px 15px;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+        font-size: 0.95rem;
+        letter-spacing: 0.5px;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 
-        .nav-label {
-          font-size: 14px;
-          font-weight: 500;
+        .nav-icon {
+          margin-right: 10px;
+          color: #ffcc7a;
+          font-size: 1.1rem;
+          transition: all 0.3s ease;
+        }
+
+        .nav-underline {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 2px;
+          background: #ffcc7a;
+          transition: all 0.3s ease;
         }
 
         &:hover {
-          color: #4fa8d3;
+          background: rgba(255, 228, 179, 0.05);
+
+          .nav-icon {
+            color: #ffe4b3;
+            transform: scale(1.1);
+          }
+
+          .nav-underline {
+            width: 60%;
+          }
         }
 
         &.active {
-          color: #2c3e50;
-          font-weight: 700;
+          color: #ffcc7a;
+          font-weight: bold;
+
+          .nav-underline {
+            width: 80%;
+            background: #ffe4b3;
+          }
         }
       }
     }
@@ -91,30 +155,32 @@
         max-width: 720px;
         margin: 0 auto;
         flex-wrap: nowrap;
-        padding: 6px 16px;
+        padding: 8px 20px;
       }
 
       .header-logo {
         .logo-image {
-          max-width: 80px;
+          max-width: 75px;
         }
       }
 
       .navbar-menu {
         width: auto;
+        background: transparent;
         padding: 0;
         margin-left: 20px;
 
         .nav-links {
           flex-direction: row;
-          gap: 16px;
-          padding: 0;
+          gap: 5px;
 
           .nav-link {
-            padding: 6px 10px;
+            margin: 0;
+            padding: 8px 15px;
+            font-size: 0.9rem;
 
-            .nav-label {
-              font-size: 14px;
+            .nav-underline {
+              bottom: -5px;
             }
           }
         }
@@ -129,18 +195,16 @@
     .header-navbar {
       .header-container {
         max-width: 960px;
+        padding: 10px 30px;
       }
 
       .navbar-menu {
         .nav-links {
-          gap: 24px;
+          gap: 15px;
 
           .nav-link {
-            padding: 8px 12px;
-
-            .nav-label {
-              font-size: 16px;
-            }
+            padding: 10px 20px;
+            font-size: 1rem;
           }
         }
       }
@@ -148,7 +212,13 @@
   }
 }
 
-@keyframes baroqueFlow {
-  0% { background-position: 100% 0; }
-  100% { background-position: -100% 0; }
+/* ============ ANIMATIONS ============ */
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
 }

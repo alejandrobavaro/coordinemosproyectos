@@ -25,7 +25,7 @@ const ProximoShowContadorDias = () => {
   // Efecto para partículas
   useEffect(() => {
     const createParticle = () => {
-      const colors = ['#FFD700', '#FF4500', '#32CD32', '#9370DB'];
+      const colors = ['#FFD1DC', '#B5EAD7', '#C7CEEA', '#E2F0CB'];
       const particle = document.createElement('div');
       particle.className = 'contador-particle';
 

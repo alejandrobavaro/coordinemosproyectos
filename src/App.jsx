@@ -29,7 +29,6 @@ import ProximoShowContadorDias from "./componentes/ProximoShowContadorDias";
 //------------CONTEXTOS--------------//
 import { AuthProvider, useAuth } from "./context/AuthContext";
 
-// Componente PrivateRoute mejorado
 function PrivateRoute({ children, requiredLevel }) {
   const { nivelAcceso } = useAuth();
   const navigate = useNavigate();
@@ -52,6 +51,9 @@ function App() {
     <AuthProvider>
       <Router>
         <div className="app-container">
+          <div className="app-background"></div>
+          <div className="app-frame"></div>
+          
           <Header />
           <main className="main-content">
             <div className="content-wrapper">

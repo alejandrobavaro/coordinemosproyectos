@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { BsList, BsHouseDoor, BsImages, BsCameraFill, BsFillPersonLinesFill, BsStarFill, BsCalendarEvent, BsListTask } from "react-icons/bs";
+import { 
+  BsList, 
+  BsHouseDoor, 
+  BsCameraFill, 
+  BsStarFill, 
+  BsFillPersonLinesFill, 
+  BsListTask, 
+  BsCalendarEvent 
+} from "react-icons/bs";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "../assets/scss/_03-Componentes/_Header.scss";
 
@@ -10,20 +18,18 @@ const Header = () => {
 
   const handleToggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
-  // Enlaces para panel público
   const publicLinks = [
     { path: "/", icon: <BsHouseDoor />, label: "Inicio" },
-  
     { path: "/contribuciones", icon: <BsCameraFill />, label: "Contribuciones" },
-       { path: "/puntuaciones", icon: <BsStarFill />, label: "Puntuaciones" },
-    { path: "/codigo-vestimenta", icon: <BsFillPersonLinesFill />, label: "Estetica" },
-        { path: "/tareas-banda", icon: <BsListTask />, label: "Tareas" },
-     { path: "/proximo-show", icon: <BsCalendarEvent />, label: "Shows" }
+    { path: "/puntuaciones", icon: <BsStarFill />, label: "Puntuaciones" },
+    { path: "/codigo-vestimenta", icon: <BsFillPersonLinesFill />, label: "Estética" },
+    { path: "/tareas-banda", icon: <BsListTask />, label: "Tareas" },
+    { path: "/proximo-show", icon: <BsCalendarEvent />, label: "Shows" }
   ];
 
   return (
     <header className="app-header">
-      <div className="header-decoration-top"></div>
+      <div className="header-decoration"></div>
       <Navbar expand="lg" className="header-navbar">
         <Container className="header-container">
           <Navbar.Brand as={Link} to="/" className="header-logo">
@@ -56,13 +62,13 @@ const Header = () => {
                 >
                   <span className="nav-icon">{link.icon}</span>
                   <span className="nav-label">{link.label}</span>
+                  <span className="nav-underline"></span>
                 </Link>
               ))}
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <div className="header-decoration-bottom"></div>
     </header>
   );
 };

@@ -1,4 +1,6 @@
 /*--------------Estilos Base Mobile First--------------*/
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Urbanist:wght@400;500;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -9,65 +11,167 @@ html, body {
   height: 100%;
   scroll-behavior: smooth;
   font-size: 14px;
-  background-color: #121212; // Fondo oscuro
-  color: #e0e0e0; // Texto claro
+  background-color: #121212;
+  color: #e0e0e0;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.6;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
 /*--------------Contenedor Principal--------------*/
 .app-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
   max-width: 412px;
   margin: 0 auto;
-  position: relative;
-  background: #1e1e1e; // Fondo oscuro para el contenedor principal
+  background: linear-gradient(135deg, #0a0a0a 0%, #000000 100%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  border: 1px solid rgba(255, 228, 179, 0.1);
+}
+
+.app-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(255, 228, 179, 0.05) 0%, transparent 30%),
+    radial-gradient(circle at 80% 70%, rgba(210, 155, 35, 0.05) 0%, transparent 30%);
+  z-index: -1;
+  opacity: 0.8;
+  animation: backgroundPulse 15s infinite alternate;
+}
+
+.app-frame {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  border: 1px solid rgba(255, 228, 179, 0.2);
+  border-radius: 6px;
+  pointer-events: none;
+  z-index: 0;
 }
 
 /*--------------Contenido Principal--------------*/
 .main-content {
   flex: 1;
-  padding: 0.5rem;
+  padding: 0.8rem;
+  position: relative;
 }
 
 .content-wrapper {
   width: 100%;
-  padding: 0 0.5rem;
+  padding: 0 0.8rem;
 }
 
-/*--------------Tipografía Mobile First--------------*/
+/*--------------Tipografía - Jerarquía Rockera--------------*/
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 0.8rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  color: #ffffff; // Texto blanco para los títulos
+  margin-bottom: 1rem;
+  font-family: 'Special Elite', cursive;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
 h1 {
+  font-size: 2rem;
+  color: #ffcc7a;
+  margin-bottom: 1.2rem;
+  position: relative;
+  
+  &::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #ffcc7a;
+    margin: 0.5rem auto;
+    border-radius: 3px;
+  }
+}
+
+h2 {
   font-size: 1.6rem;
+  color: #e0e0e0;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: #bdbdbd;
 }
 
 p {
-  font-size: 0.9rem;
-  color: #bdbdbd; // Texto gris claro para párrafos
+  font-size: 0.95rem;
+  color: #bdbdbd;
+  line-height: 1.6;
+  padding: 0.5rem 0;
+}
+
+.lead-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #d8d8d8;
   line-height: 1.5;
-  padding: 0.5rem;
+}
+
+.text-accent {
+  color: #ffcc7a;
+  font-weight: 600;
+}
+
+/*--------------Botones y Enlaces--------------*/
+a {
+  color: #ffcc7a;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  
+  &:hover {
+    color: #ffe4b3;
+    
+    &::after {
+      width: 100%;
+    }
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #ffe4b3;
+    transition: all 0.3s ease;
+  }
 }
 
 /*--------------Footer--------------*/
 footer {
   margin-top: auto;
-  padding: 1rem 0;
-  background-color: #000000; // Fondo negro para el footer
-  color: #bdbdbd; // Texto gris claro para el footer
+  padding: 1.2rem 0;
+  background: rgba(15, 15, 15, 0.95);
+  color: #bdbdbd;
+  border-top: 1px solid rgba(255, 228, 179, 0.1);
+  font-family: 'Special Elite', cursive;
+  
+  p {
+    font-size: 0.85rem;
+    color: #999;
+  }
 }
 
 /*--------------Media Queries Progresivas--------------*/
@@ -89,10 +193,23 @@ footer {
   .content-wrapper {
     max-width: 700px;
     margin: 0 auto;
+    padding: 0 1.5rem;
   }
 
   h1 {
+    font-size: 2.5rem;
+    
+    &::after {
+      width: 80px;
+    }
+  }
+
+  h2 {
     font-size: 2rem;
+  }
+
+  .main-content {
+    padding: 1.2rem;
   }
 }
 
@@ -102,6 +219,25 @@ footer {
   }
 
   .content-wrapper {
-    max-width: 950px;
+    max-width: 900px;
   }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+/*--------------Animaciones--------------*/
+@keyframes backgroundPulse {
+  0% { opacity: 0.7; }
+  100% { opacity: 0.9; }
+}
+
+@keyframes textPulse {
+  0%, 100% { text-shadow: 0 0 5px rgba(255, 204, 122, 0.5); }
+  50% { text-shadow: 0 0 10px rgba(255, 204, 122, 0.8); }
+}
+
+.text-pulse {
+  animation: textPulse 2s infinite ease-in-out;
 }
